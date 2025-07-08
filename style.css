@@ -1,0 +1,222 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Global Styling */
+body {
+  background:#f0f4f8;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+/* Navbar Styling */
+.navbar {
+  background-color: #6b63ffb9 !important;
+}
+.navbar-brand span {
+  color: #333 !important;
+
+  font-weight: 600;
+}
+
+.nav-link {
+  color: white !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #1707ff !important;
+}
+
+.carousel-frame {
+  width: 500px;   /* You can change to 400px or 600px as needed */
+  max-width: 90%;
+}
+
+.carousel-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+.custom-carousel-btn {
+  background-color: transparent;
+  border: none;
+  color: #004094;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.custom-carousel-btn:hover {
+  color: #002d70;
+  text-shadow: 0 0 15px rgba(0, 64, 148, 0.5);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-control-prev.custom-carousel-btn {
+  left: -70px;
+}
+
+.carousel-control-next.custom-carousel-btn {
+  right: -70px;
+}
+
+
+
+/* Heading */
+.container h2 {
+  color: #0056b3;
+  font-weight: 600;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Form Container Animation */
+form#registrationForm {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 1s ease;
+}
+
+form#registrationForm:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Input Styling */
+input.form-control,
+textarea.form-control,
+select.form-select {
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
+  transition: all 0.3s ease;
+}
+
+input.form-control:focus,
+textarea.form-control:focus,
+select.form-select:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 0 0.2rem rgba(0, 86, 179, 0.25);
+}
+
+/* Submit Button */
+button.btn-primary {
+  background-color: #0056b3;
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button.btn-primary:hover {
+  background-color: #004094;
+  transform: scale(1.05);
+}
+
+/* Contact section full width and grey bg */
+.contact-section {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  background-color: #d3d3d3; /* light grey */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #333;
+  animation: fadeInUp 1s ease forwards; /* same fade-in as form */
+}
+
+/* Remove default margin/padding from inner div */
+.contact-section > .row > .col-md-6 > div {
+  padding: 0;
+  margin: 0;
+}
+
+.contact-section h2 {
+  text-align: center; /* Keep heading centered */
+}
+
+.contact-content {
+  text-align: left; /* Left align content */
+}
+
+/* Animation helper class */
+.animate-fadeIn {
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Custom mild button styles for navbar Login & Sign Up */
+
+.btn-mild-primary {
+  background-color: #b3d4fc;   /* Light sky blue */
+  color: #003366;
+  border: 1px solid #90c2f3;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-mild-primary:hover {
+  background-color: #a2c8f9;
+  color: #002244;
+  border-color: #7eb8f5;
+  transform: scale(1.05);
+}
+
+.custom-login-btn {
+  background-color: #e2e3e5;   /* Mild grey */
+  color: #333;
+  border: 1px solid #bbb;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.custom-login-btn:hover {
+  background-color: #d6d8db;
+  color: #111;
+  border-color: #999;
+  transform: scale(1.05);
+}
+
+
+/* Keyframes for Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
