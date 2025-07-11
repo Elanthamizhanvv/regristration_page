@@ -1,1 +1,1 @@
-# regristration_page
+# registration_page
